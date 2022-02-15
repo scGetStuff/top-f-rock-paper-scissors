@@ -1,23 +1,56 @@
 body * {
-    border: 1px solid black;
     margin-top: 0;
 }
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.action, .screen-log {
+    border: 1px solid black;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action button {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status label, input {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.status input {
+    background-color: lightgray;
+    margin-right: 2rem;
+    width: 3rem;
 }
 
 .screen-log {
     color: black;
-    background-color: beige;
     margin: 32px;
     padding: 16px;
-    min-width: 50%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
 }
